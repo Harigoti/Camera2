@@ -133,7 +133,8 @@ public class FullscreenActivity extends AppCompatActivity {
                 final float aperture = camera.state.autoState.aperture;
 
                 runOnUiThread(() -> {
-                    whiteBalanceInfo.setText(kelvin + "K");
+                    String temp = kelvin + "k";
+                    whiteBalanceInfo.setText(temp);
                     focusInfo.setText(focusDistance + "cm");
                     isoInfo.setText("ISO" + iso);
                     shutterInfo.setText(expTime + "s");
